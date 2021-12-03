@@ -39,7 +39,7 @@
 
         .title-header {
             color: #333c66;
-            margin-bottom: 60px;
+            margin-bottom: 45px;
             margin-top: 0px;
         }
 
@@ -69,13 +69,61 @@
             width: 80%;
             margin: auto;
         }
+
+        .margin-top {
+            margin-top: 20px;
+        }
+
+        .margin-bottom {
+            margin-bottom: 20px;
+        }
+
+        .margin-top-50 {
+            margin-top: 50px;
+        }
+
+        .mb-50 {
+            margin-bottom: 50px;
+        }
+
+        .imagen-full-width {
+            width: 100%;
+        }
+
+        .habilities {
+            display: inline-flex;
+        }
+
+        .hability-icon {
+            height: 40px;
+        }
+
+        .hability-description {
+            font-size: 16px;
+        }
+
+        .hability-tag {
+            background-color: rgba(51, 61, 102, .07);
+            color: rgba(51, 61, 102, .8);
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .hability-dot {
+            color: rgba(51, 61, 102, .7);
+        }
+        
+        .hability-experience {
+            font-size: 10px;
+        }
     </style>
 </head>
 
 <body>
     <!-- Inicia navbar  -->
     <div class="container">
-        <nav>
+        <nav class="margin-bottom">
             <img src="brand/logo1.png" alt="Logo de mi sitio web" height="64px" />
             <!--
         src: origen de la imágen
@@ -96,7 +144,7 @@
     </div>
     <!-- Finaliza navbar -->
     <!-- Inicia header -->
-    <header class="container">
+    <header class="container margin-bottom">
         <img class="avatar-header" src="avatar.jpg" alt="Foto de perfil">
         <div style="display: inline; position: absolute; padding: 15px 50px 15px 50px;">
             <h4 class="title-job">
@@ -117,7 +165,7 @@
     <!-- Finaliza header -->
     <!-- Inicia sección de descripción -->
     <!-- style="background-color: chartreuse;" -->
-    <section style="padding: 0px 80px 0px 80px;">
+    <section class="container margin-top-50 mb-50">
         <P>
             My name is Ivan Votti. I’m a frontend developer with a full-stack background and a keen eye for good design.
             I love to make complex things simple and joy to use. Currently, I focus on building single-page applications
@@ -142,48 +190,53 @@
             <h2>Habilidades</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facilis possimus nesciunt quo, iste
                 distinctio sed ipsa hic laboriosam pariatur?</p>
-            <div style="display: inline-flex;">
+            <div class="habilities">
                 <div>
                     <!-- Inicia tarjeta de lenguaje de programación -->
                     <div style="display: inline">
-                        <div style="width: 45%;">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-                                alt="c++" height="40px">
+                        <div style="width: 60%; margin: auto; padding: 15px 0px 15px 0px;">
+                            <img class="hability-icon"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                                alt="c++">
                             <h4>Javascript</h4>
-                            <span>* 6 años</span>
+                            <span class="hability-dot">·</span>
+                            <span class="hability-experience">6 años</span>
                         </div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsam veniam esse
+                            <p class="hability-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem ipsam veniam esse
                                 dignissimos
                                 quae!
                                 Itaque, optio. Cumque fugit quas at?</p>
                         </div>
-                        <div>
-                            <span>Ember</span>
-                            <span>React</span>
-                            <span>Gatsby</span>
+                        <div >
+                            <span class="hability-tag">Ember</span>
+                            <span class="hability-tag">React</span>
+                            <span class="hability-tag">Gatsby</span>
                         </div>
                     </div>
                     <!-- Finaliza tarjeta de lenguaje de programación -->
                 </div>
                 <div>
                     <div style="display: inline">
-                        <div style="width: 45%;">
+                        <div style="width: 60%; margin: auto; padding: 15px 0px 15px 0px;">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
                                 alt="c++" height="40px">
                             <h4>Javascript</h4>
-                            <span>* 6 años</span>
+                            <span class="hability-dot">·</span>
+                            <span>6 años</span>
                         </div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsam veniam esse
+                            <p class="hability-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem ipsam veniam esse
                                 dignissimos
                                 quae!
                                 Itaque, optio. Cumque fugit quas at?</p>
                         </div>
                         <div>
-                            <span>Ember</span>
-                            <span>React</span>
-                            <span>Gatsby</span>
+                            <span class="hability-tag">Ember</span>
+                            <span class="hability-tag">React</span>
+                            <span class="hability-tag">Gatsby</span>
                         </div>
                     </div>
                 </div>
@@ -191,43 +244,47 @@
             <div style="display: inline-flex;">
                 <div>
                     <div style="display: inline">
-                        <div style="width: 45%;">
+                        <div style="width: 60%; margin: auto; padding: 15px 0px 15px 0px;">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
                                 alt="c++" height="40px">
                             <h4>Javascript</h4>
-                            <span>* 6 años</span>
+                            <span class="hability-dot">·</span>
+                            <span>6 años</span>
                         </div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsam veniam esse
+                            <p class="hability-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem ipsam veniam esse
                                 dignissimos
                                 quae!
                                 Itaque, optio. Cumque fugit quas at?</p>
                         </div>
                         <div>
-                            <span>Ember</span>
-                            <span>React</span>
-                            <span>Gatsby</span>
+                            <span class="hability-tag">Ember</span>
+                            <span class="hability-tag">React</span>
+                            <span class="hability-tag">Gatsby</span>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div style="display: inline">
-                        <div>
+                        <div style="width: 60%; margin: auto; padding: 15px 0px 15px 0px;">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
                                 alt="c++" height="40px">
                             <h4>Javascript</h4>
-                            <span>* 6 años</span>
+                            <span class="hability-dot">·</span>
+                            <span>6 años</span>
                         </div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsam veniam esse
+                            <p class="hability-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem ipsam veniam esse
                                 dignissimos
                                 quae!
                                 Itaque, optio. Cumque fugit quas at?</p>
                         </div>
                         <div>
-                            <span>Ember</span>
-                            <span>React</span>
-                            <span>Gatsby</span>
+                            <span class="hability-tag">Ember</span>
+                            <span class="hability-tag">React</span>
+                            <span class="hability-tag">Gatsby</span>
                         </div>
                     </div>
                 </div>
@@ -289,10 +346,10 @@
     <!-- Finaliza sección de mis proyectos -->
     <!-- Inicia sección de imágen -->
     <section>
-        <div class="container">
-            <img src="https://ivanvotti.com/static/cfe0191b18ad06cd620f3e1b65c34964/181e5/working.webp"
-                alt="Imagen decorativa" width="100%">
-        </div>
+        <img class="imagen-full-width"
+            src="https://ivanvotti.com/static/cfe0191b18ad06cd620f3e1b65c34964/181e5/working.webp"
+            alt="Imagen decorativa">
+
     </section>
     <!-- Finaliza sección de imágen -->
     <!-- Inicia sección de formulario -->
