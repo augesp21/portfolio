@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png.png" type="image/jpg">
     <title>Inicio - Augusto España - portfolio</title>
     <style>
         body {
@@ -16,6 +17,47 @@
         h2 {
             color: #4b5ebe;
             margin-top: unset;
+        }
+
+        .avatar-header {
+            width: 30%;
+            border-radius: 50%;
+            border: 5px solid #5b687b;
+        }
+
+        .title-job {
+            text-transform: uppercase;
+            color: #8895bf;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .title-header {
+            color: #333c66;
+            margin-bottom: 60px;
+            margin-top: 0px;
+        }
+
+        .title-header-name {
+            color: #4b5ebe;
+        }
+
+        .button-header {
+            background-color: #4b5ebe;
+            color: #ffffff;
+            text-decoration: none;
+            /* padding-top: 10px; 
+            padding-bottom: 10px;
+            padding-right: 20px;
+            padding-left: 20px; */
+            /* padding: 10px 20px 10px 20px; */
+            padding: 8px 20px;
+            border-radius: 4px;
+
+        }
+
+        .text-bold {
+            font-weight: 600;
         }
     </style>
 </head>
@@ -43,15 +85,16 @@
     <!-- Finaliza navbar -->
     <!-- Inicia header -->
     <header>
-        <img src="avatar.jpg" alt="Foto de perfil" width="30%">
+        <img class="avatar-header" src="avatar.jpg" alt="Foto de perfil">
         <div style="display: inline; position: absolute; padding: 15px 50px 15px 50px;">
-            <h4>
+            <h4 class="title-job">
                 Developer in progress
             </h4>
-            <h1>
-                Hola! Soy <span>Augusto M. España Saavedra</span> y me gustaría aprender a desarrollar como un cuak.
+            <h1 class="title-header">
+                Hola! Soy <span class="title-header-name">Augusto M. España Saavedra</span> y me gustaría aprender a
+                desarrollar como un cuak.
             </h1>
-            <a href="https://www.instagram.com/augesp/?hl=es">
+            <a class="button-header" href="https://www.instagram.com/augesp/?hl=es">
                 Ver más
             </a>
         </div>
@@ -64,18 +107,20 @@
     <!-- style="background-color: chartreuse;" -->
     <section style="padding: 0px 80px 0px 80px;">
         <P>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aut eligendi quasi fugiat esse
-            repellendus ducimus ipsam et ab iusto!
+            My name is Ivan Votti. I’m a frontend developer with a full-stack background and a keen eye for good design.
+            I love to make complex things simple and joy to use. Currently, I focus on building single-page applications
+            with <span class="text-bold">React</span> and <span class="text-bold">Ember</span>.
         </P>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt similique modi tenetur, neque sint eius
-            debitis atque velit iure distinctio voluptas vitae culpa molestias alias impedit ratione, cupiditate eveniet
-            ex
-            fugiat doloribus. Alias, quas?
+            Over the past <span class="text-bold">8 years</span>, I’ve gained experience across most aspects of the
+            application lifecycle, including
+            frontend, backend, and dev-ops. This allows me to take full ownership of a project from design to
+            implementation and deployment.
         </p>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis porro corporis voluptatibus consectetur
-            pariatur praesentium!
+            I started as a backend developer on <span class="text-bold">Python/Django</span> stack. At some point, I
+            found out that I enjoy
+            contributing to user experience and design. Since then, I’ve changed my focus to frontend development.
         </p>
     </section>
     <!-- Finaliza sección de descripción -->
